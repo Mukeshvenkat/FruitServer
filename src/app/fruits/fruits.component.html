@@ -1,0 +1,13 @@
+<div class="text-center" style="padding:30px;"><b>All Items</b></div>
+<div class="row">
+  <div class="col-xs-4">
+    <div class="fruit-container" *ngFor="let fruit of fruits | keyvalue; let i = index">
+      <div class="fruit-name">{{ fruit.key }}</div>
+      <div class="fruit-count">{{ fruit.value.quantity }}</div>
+      <div class="button-container">
+        <button>+</button>
+        <button>-</button>
+      </div>
+    </div>
+  </div>
+</div>
